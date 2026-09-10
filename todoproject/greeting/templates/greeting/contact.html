@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="{% static 'greeting/style.css' %}">
+</head>
+
+<body>
+
+    <h1>Contact Me</h1>
+
+    <div class="navigation">
+        <a href="/gallery/">Gallery</a>
+        <a href="/contact/">Contact</a>
+    </div>
+
+    <p>
+        Thank you for visiting my website.
+        You can contact me anytime.
+    </p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="thankyou"></p>
+
+    <script src="{% static 'greeting/script.js' %}"></script>
+
+</body>
+</html>
